@@ -12,7 +12,10 @@ def Multiply(a, b):
 
 def Divide(a, b):
 	#TODO
-	return "TODO"
+	try:
+		return str(round(a/b, 2))
+	except ZeroDivisionError:
+		return '[Division By Zero!]'
 
 ###
 # start of execution
