@@ -24,6 +24,9 @@ def Divide(a, b):
 ##
 # tests (3 per operation)
 ##
+assert Divide(10, 5) == '2.0'
+assert Divide(50, 2) == '25.0'
+assert Divide(7, 2) == '3.5'
 
 #TODO
 
