@@ -15,7 +15,7 @@ def Divide(a, b):
 	try:
 		return str(round(a/b, 2))
 	except ZeroDivisionError:
-		return '[Division By Zero!]'
+		return '[Division By Zero]'
 
 ###
 # start of execution
