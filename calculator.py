@@ -7,11 +7,8 @@ def Subtract(a, b):
 	return "TODO"
 
 def Multiply(a, b):
-	# clean input
-	operandA = float(str(a).replace(" ", ""))
-	operandB = float(str(b).replace(" ", ""))
 	# evaluate function
-	result = round(operandA * operandB,4)
+	result = round(a * b,4)
 	# return answer as string
 	return str(result)
 
