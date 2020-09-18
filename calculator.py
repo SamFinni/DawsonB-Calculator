@@ -1,3 +1,4 @@
+# Adds two numbers together (a + b)
 def Add(a, b):
 	return str(round(a+b, 4))
 
