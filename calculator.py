@@ -28,7 +28,7 @@ def Divide(a, b):
 # user input/output
 ##
 
-eq = input("Enter a single-operator equation (eg, 5*2.5): ").strip()
+eq = input("Enter a single-operator equation (eg, 5*2.5): ").replace(" ", "")
 
 result = "Result: "
 
