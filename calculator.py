@@ -22,10 +22,13 @@ def Divide(a, b):
 ###
 
 ##
+
 # Subtract(a,b) tests
 assert Subtract(10,5) == "5"
 assert Subtract(87.4,63.5) == "23.9"
 assert Subtract(-15,-34) == "19"
+
+# tests (3 per operation)
 ##
 
 # Add() tests
