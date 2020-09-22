@@ -4,7 +4,7 @@ def Add(a, b):
 
 def Subtract(a, b):
 	#subtracts two numbers a - b
-	result = str((round(a-b)))
+	result = str(round(a-b,4))
 	return result
 
 def Multiply(a, b):
