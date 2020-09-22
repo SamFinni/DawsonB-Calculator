@@ -7,8 +7,10 @@ def Subtract(a, b):
 	return "TODO"
 
 def Multiply(a, b):
-	#TODO
-	return "TODO"
+	# evaluate function
+	result = round(a * b,4)
+	# return answer as string
+	return str(result)
 
 def Divide(a, b):
 	#TODO
@@ -26,6 +28,11 @@ def Divide(a, b):
 assert Add(5.2, 57) == "62.2"
 assert Add(3626.236, 74.745) == "3700.981"
 assert Add(-3.5, -7.4) == "-10.9"
+
+# Multiply() tests
+assert Multiply(4, 13) == "52"
+assert Multiply(7.534, 36.2) == "272.7308"
+assert Multiply(-84.2, 2.6) == "-218.92"
 
 ##
 # user input/output
