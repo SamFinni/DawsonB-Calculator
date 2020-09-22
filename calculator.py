@@ -24,7 +24,9 @@ def Divide(a, b):
 # tests (3 per operation)
 ##
 
-#TODO
+assert Multiply(4, 13) == "52"
+assert Multiply(7.534, 36.2) == "272.7308"
+assert Multiply(-84.2, 2.6) == "-218.92"
 
 ##
 # user input/output
