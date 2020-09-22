@@ -31,7 +31,7 @@ assert Add(-3.5, -7.4) == "-10.9"
 # user input/output
 ##
 
-eq = input("Enter a single-operator equation (eg, 5*2.5): ").strip()
+eq = input("Enter a single-operator equation (eg, 5*2.5): ").replace(" ", "")
 
 result = "Result: "
 
