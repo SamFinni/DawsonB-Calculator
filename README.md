@@ -5,6 +5,8 @@ Allows the user to enter a simple, one-operation equation (eg, 6.4*35, -34+67) a
 
 * Add (+): Adds the two numbers
 
+* Subtract(-): Subtracts the two numbers
+
 * Multiplication (*): Multiplies the two numbers
 
-* Division (/): Divides the 2 numbers. 
+* Division (/): Divides the two numbers

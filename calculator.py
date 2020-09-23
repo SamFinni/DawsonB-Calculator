@@ -3,8 +3,9 @@ def Add(a, b):
 	return str(round(a+b, 4))
 
 def Subtract(a, b):
-	#TODO
-	return "TODO"
+	#subtracts two numbers a - b
+	result = str(round(a-b,4))
+	return result
 
 def Multiply(a, b):
 	# evaluate function
@@ -23,6 +24,12 @@ def Divide(a, b):
 ###
 
 ##
+
+# Subtract(a,b) tests
+assert Subtract(10,5) == "5"
+assert Subtract(87.4,63.5) == "23.9"
+assert Subtract(-15,-34) == "19"
+
 # tests (3 per operation)
 ##
 
