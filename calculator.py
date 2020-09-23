@@ -13,8 +13,10 @@ def Multiply(a, b):
 	return str(result)
 
 def Divide(a, b):
-	#TODO
-	return "TODO"
+	try:
+		return str(round(a/b, 2))
+	except ZeroDivisionError:
+		return '[Division By Zero]'
 
 ###
 # start of execution
@@ -34,23 +36,40 @@ assert Multiply(4, 13) == "52"
 assert Multiply(7.534, 36.2) == "272.7308"
 assert Multiply(-84.2, 2.6) == "-218.92"
 
+# Divide() tests
+assert Divide(10, 5) == '2.0'
+assert Divide(50, 2) == '25.0'
+assert Divide(7, 2) == '3.5'
+
 ##
 # user input/output
 ##
 
-eq = input("Enter a single-operator equation (eg, 5*2.5): ").replace(" ", "")
+alive = True
 
-result = "Result: "
+while alive:
 
-if ("+" in eq):
-	result += Add(float(eq.split("+")[0]), float(eq.split("+")[1]))
-elif ("-" in eq):
-	result += Subtract(float(eq.split("-")[0]), float(eq.split("-")[1]))
-elif ("*" in eq):
-	result += Multiply(float(eq.split("*")[0]), float(eq.split("*")[1]))
-elif ("/" in eq):
-	result += Divide(float(eq.split("/")[0]), float(eq.split("/")[1]))
-else:
-	result = "Invalid input"
+	eq = input("Enter a single-operator equation (eg, 5*2.5): ")
 
-print(result)
+	result = "Result: "
+
+	if ("+" in eq):
+		result += Add(float(eq.split("+")[0]), float(eq.split("+")[1]))
+	elif ("-" in eq):
+		result += Subtract(float(eq.split("-")[0]), float(eq.split("-")[1]))
+	elif ("*" in eq):
+		result += Multiply(float(eq.split("*")[0]), float(eq.split("*")[1]))
+	elif ("/" in eq):
+		result += Divide(float(eq.split("/")[0]), float(eq.split("/")[1]))
+	else:
+		result = "Invalid input"
+
+	print(result)
+
+	quit = input("Quit [Y/N]: ")
+	print('')
+	if quit.lower() == 'y':
+		alive = False
+		break
+	elif quit.lower() == 'n':
+		pass
